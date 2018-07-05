@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/AppImage/v15
+/AppImage/AppImage/bin/Debug/netstandard2.0
+/AppImage/AppImage/obj
+/AppImage/AppImage.Android/bin/Debug
+/AppImage/AppImage.Android/obj
+/AppImage/AppImage.iOS/bin/iPhoneSimulator/Debug
+/AppImage/AppImage.iOS/obj

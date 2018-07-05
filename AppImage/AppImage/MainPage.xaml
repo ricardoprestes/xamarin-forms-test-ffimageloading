@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppImage"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             x:Class="AppImage.MainPage"
+             Title="AppImage">
+
+    <StackLayout
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+        <ffimageloading:CachedImage 
+            x:Name="ProfileImage"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"
+			WidthRequest="300" 
+            HeightRequest="300"
+			DownsampleToViewSize="true"
+            LoadingPlaceholder="ic_account.png"
+            Source="https://www.cavzodiaco.com.br/imagens-mangas/lostcanvas/gaidens/shion-1/1.jpg">
+            <ffimageloading:CachedImage.Transformations>
+                <fftransformations:CircleTransformation BorderHexColor="#000000" BorderSize="15"/>
+                <fftransformations:GrayscaleTransformation />
+            </ffimageloading:CachedImage.Transformations>
+        </ffimageloading:CachedImage>
+    </StackLayout>
+
+</ContentPage>
